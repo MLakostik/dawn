@@ -71,10 +71,16 @@
       "type": "product-recommendations",
       "settings": {
       }
+    },
+    "sale-counter": {
+      "type": "sale-counter",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "sale-counter"
   ]
 }
