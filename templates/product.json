@@ -80,7 +80,7 @@
   },
   "order": [
     "main",
-    "product-recommendations",
-    "sale-counter"
+    "sale-counter",
+    "product-recommendations"
   ]
 }
