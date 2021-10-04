@@ -79,8 +79,8 @@
     }
   },
   "order": [
-    "main",
     "sale-counter",
+    "main",
     "product-recommendations"
   ]
 }
