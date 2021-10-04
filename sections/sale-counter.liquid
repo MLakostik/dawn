@@ -1,0 +1,23 @@
+<div>
+    <h1 style="text-align: center;">Sale Countdown</h1>
+    <h2 style="text-align: center;" id="date-counter"></h2>
+</div>
+
+<script>
+    var countDownDate = new Date("Oct 10, 2021 14:30:00").getTime();
+
+    var x = setInterval(function() {
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("date-counter").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+    }, 1000);
+
+</script>
